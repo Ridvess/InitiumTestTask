@@ -1,0 +1,100 @@
+.table-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #F7F7F7;
+  text-align: left;
+}
+
+.table-header {
+
+}
+
+.table-header-checkbox {
+  width: 40px;
+}
+
+.checkmark{
+  &-header{
+    width: 16px;
+    height: 16px;
+    margin: 16px 12px;
+  }
+  &-row{
+    width: 16px;
+    height: 16px;
+    margin: 16px 12px;
+  }
+
+}
+.table-header {
+  height: 40px;
+  font-family: "Roboto Light", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+
+  &-name {
+    width: 200px;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  &-mail {
+    width: 200px;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    position: relative;
+    &:after{
+      content: '';
+      height: 48px;
+      width: 2px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: col-resize;
+    }
+  }
+  &-phone {
+    width: 100%;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
+
+.table-row {
+  height: 48px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.table-row-input {
+  height: 38px;
+  width: 148px;
+  background: rgba(0, 128, 255, .1);
+  border: none;
+  border-radius: 8px;
+  color: #2E2E2E;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto Light", sans-serif;
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background: none;
+  }
+}
