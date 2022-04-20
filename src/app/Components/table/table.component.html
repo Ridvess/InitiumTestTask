@@ -11,62 +11,25 @@
     </tr>
     </thead>
     <tbody>
-      <tr class="table-row">
+<!--    table string row for data  -->
+      <tr class="table-row" *ngFor="let person of personData">
         <td>
           <input type="checkbox" class="checkmark-row">
         </td>
         <td>
-          <input type="text" class="table-row-input" disabled>
+          <input type="text" class="table-row-input" value="{{person.name + ' ' + person.surname}}" disabled>
         </td>
         <td>
-          <input type="text" class="table-row-input">
+          <input type="text" class="table-row-input" value="{{person.email}}">
         </td>
         <td>
-          <input type="text" class="table-row-input">
+          <input type="text" class="table-row-input" value="{{person.phone}}">
         </td>
+        <button class="table-row-edit">e</button>
+        <button class="table-row-delete">d</button>
       </tr>
-      <tr class="table-row">
-        <td>
-          <input type="checkbox" class="checkmark-row">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-      </tr>
-      <tr class="table-row">
-        <td>
-          <input type="checkbox" class="checkmark-row">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-      </tr>
-      <tr class="table-row">
-        <td>
-          <input type="checkbox" class="checkmark-row">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-        <td>
-          <input type="text" class="table-row-input">
-        </td>
-      </tr>
+
+
     </tbody>
   </table>
 </div>

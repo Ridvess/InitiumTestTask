@@ -78,6 +78,16 @@ thead {
 .table-row {
   height: 48px;
   border-bottom: 1px solid #F2F2F2;
+  position: relative;
+}
+
+.table-row-delete{
+  position: absolute;
+  right: 10px;
+}
+.table-row-edit{
+  position: absolute;
+  right: 40px;
 }
 
 .table-row-input {

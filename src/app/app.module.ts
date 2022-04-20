@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TableComponent } from './Components/table/table.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { RowDataComponent } from './Components/row-data/row-data.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RowDataComponent } from './Components/row-data/row-data.component';
     RowDataComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
